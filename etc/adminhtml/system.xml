@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+                <group id="eurobank" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                    <label>Eurobank redirect</label>
+
+                    <field id="active" translate="label comment" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Enable</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+
+                    <field id="title" translate="label comment" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Title</label>
+                    </field>
+
+                    <field id="installments" translate="label comment" sortOrder="3" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Installments</label>
+                    </field>
+
+                    <field id="merchant_id" translate="label comment" sortOrder="7" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Merchant ID</label>
+                    </field>
+
+                    <field id="username" translate="label comment" sortOrder="8" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Username</label>
+                    </field>
+
+                    <field id="password" translate="label comment" sortOrder="9" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Password</label>
+                    </field>
+
+                    <field id="order_status" translate="label comment" sortOrder="11" type="select" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>New Order Status</label>
+                        <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                    </field>
+
+                    <field id="confirm" translate="confirm URL" sortOrder="8" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Confirm URL</label>
+                    </field>
+
+                    <field id="cancel" translate="cancel URL" sortOrder="8" type="text" showInDefault="1" showInWebsite="1" showInStore="0">
+                        <label>Cancel URL</label>
+                    </field>
+
+                    <field id="post_url" translate="label comment" sortOrder="400" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Post Url</label>
+                    </field>
+
+                </group>
+        </section>
+    </system>
+</config>

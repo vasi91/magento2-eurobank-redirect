@@ -1,0 +1,21 @@
+{
+    "name": "vasilis/module-eurobank",
+    "description": "",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "neutra5@gmail.com",
+            "name": "Vasilis"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Vasilis\\Eurobank\\": ""
+        }
+    }
+}

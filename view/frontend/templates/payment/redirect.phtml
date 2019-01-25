@@ -1,0 +1,14 @@
+<?php $postData = $this->getPostData(); ?>
+
+<form id="redirect_form" action="<?php echo $this->getPostUrl(); ?>" method="POST">
+    <?php foreach($postData as $postItemKey => $postItemValue) {
+    		?>
+    <input type="hidden" name="<?php echo $postItemKey; ?>" value="<?php echo $postItemValue; ?>" />
+    <?php
+    	} ?>
+    <p><?php echo __("You are transferred to Eurobank's secure payment environment. <input type='submit' value='Click here'> if you are not automatically transferred."); ?>
+</form>
+
+<script type="text/javascript">
+document.getElementById("redirect_form").submit();
+</script>

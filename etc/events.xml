@@ -1,0 +1,5 @@
+<config>
+    <event name="payment_method_assign_data_eurobank">
+        <observer name="vasilis_custom_gateway_data_assign" instance="Vasilis\Eurobank\Observer\DataAssignObserver" />
+    </event>
+</config>
